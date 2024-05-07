@@ -1,0 +1,133 @@
+/* large screens */
+@media (min-width: 1600px)
+{
+
+}
+
+
+@media (max-width: 1500px)
+{
+
+}
+
+
+/* Desktops/Laptops */
+@media (max-width: 1200px)
+{
+    .mainTxt .tag
+    {
+        font-size: 14px;
+    }
+    .mainTxt h1
+    {
+        font-size: 35px;
+        width: 100%;
+    }
+    .productRating
+    {
+        padding: 35px 30px;
+    }
+    .ratingHead
+    {
+        font-size: 18px;
+    }
+    .rangeNumber span
+    {
+        font-size: 16px;
+    }
+    .rangeNumber span.active
+    {
+        font-size: 18px;
+    }
+    .formHead
+    {
+        font-size: 15px;
+    }
+}
+
+/* Laptops */
+@media (max-width: 1024px)
+{
+
+}
+
+/* Tablets */
+@media (max-width: 768px)
+{
+    .logo
+    {
+        padding: 40px 20px;
+    }
+    .tab-100
+    {
+        width: 100%;
+    }
+    .order_c
+    {
+        order: 2;
+    }
+}
+
+/* mobile */
+@media (max-width: 480px)
+{
+    .productRating
+    {
+        padding: 25px 20px;
+    }
+    .ratingHead
+    {
+        font-size: 15px;
+    }
+    .rangeNumber span
+    {
+        font-size: 13px;
+    }
+    .rangeNumber span.active
+    {
+        font-size: 15px;
+    }
+    .thumbsingle p
+    {
+        font-size: 10px;
+    }
+    .formHead
+    {
+        font-size: 12px;
+    }
+    .inputLabel
+    {
+        font-size: 10px;
+    }
+    .radio-single input
+    {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .radio-single input::before
+    {
+        width: 10px;
+        height: 10px;
+    }
+    .mainTxt h1
+    {
+        font-size: 20px;
+    }
+
+
+    .thankyouInner img
+    {
+        width: 100%;
+    }
+    .thankyouInner h2
+    {
+        font-size: 30px;
+    }
+    .thankyouInner p
+    {
+        font-size: 15px;
+    }
+
+
+}

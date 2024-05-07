@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback</title>
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- animation -->
+    <link rel="stylesheet" href="assets/css/animation.css">
+
+
+
+    
+</head>
+<body>
+    <main class="overflow-hidden">
+       
+        <div class="container">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-6 tab-100 order_c">
+                        <article class="mainTxt">
+                            <span class="tag">weekend discount</span>
+                            <h1>Feel Free To Drop  Us your Feedback.</h1>
+                        </article>
+                        <div class="sideImg">
+                            <img src="assets/images/Online Review-cuate.png" alt="side Img">
+                        </div>
+                    </div>
+                    <div class="col-md-6 rating-reveal tab-100">
+                        <div class="productRating">
+                            <h2 class="ratingHead">How Satisfied are you overall with the  Support of Your Delivery Partner?</h2>
+                            <form method="post" novalidate>
+                                <div class="ratingBar">
+                                    <div class="rangeNumber">
+                                        <span class="number active">0</span>
+                                        <span class="number">1</span>
+                                        <span class="number">2</span>
+                                        <span class="number">3</span>
+                                        <span class="number">4</span>
+                                        <span class="number">5</span>
+                                        <span class="number">6</span>
+                                        <span class="number">7</span>
+                                        <span class="number">8</span>
+                                        <span class="number">9</span>
+                                        <span class="number">10</span>
+                                    </div>
+                                    <input type="range" name="bar" id="bar" min="0" max="10" value="0" step="0.01">
+                                    <div class="likeThumb">
+                                        <div class="thumbsingle">
+                                            <img src="assets/images/thumbDown.png" alt="thumb">
+                                            <p>Not At all Likely</p>
+                                        </div>
+                                        <div class="thumbsingle">
+                                            <p>Extremely Likely</p>
+                                            <img src="assets/images/thumbUp.png" alt="thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                                <textarea name="message" id="maesage" placeholder="Please tell us your reasons for giving this score here.."></textarea>
+                                <h3 class="formHead">
+                                    Now Please tell us the month and the year on Which the following first happend
+                                </h3>
+                                <div class="line"></div>
+                                <label class="inputLabel">May we follow you up on your feedback?</label>
+                                <div class="radio">
+                                    <div class="radio-single">
+                                        <input type="radio" name="agree" value="Yes">
+                                        <label class="inputLabel">Yes</label>
+                                    </div>
+                                    <div class="radio-single">
+                                        <input type="radio" name="agree" value="No">
+                                        <label class="inputLabel">No</label>
+                                    </div>
+                                </div>
+                                <button id="sub" class="submit" type="button">Send Feedback</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+    <!-- Bootstrap 5 -->
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="assets/js/jQuery/jquery-3.6.4.min.js"></script>
+
+    <!-- My JS -->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

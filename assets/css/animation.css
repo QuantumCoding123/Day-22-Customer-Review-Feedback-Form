@@ -1,0 +1,43 @@
+.shake img
+{
+    animation: shake 0.5s forwards ease-in-out;
+}
+@keyframes shake {
+    0%
+    {
+        transform: rotate(-15deg);
+    }
+    25%
+    {
+        transform: rotate(15deg);
+    }
+    50%
+    {
+        transform: rotate(-15deg);
+    }
+    75%
+    {
+        transform: rotate(15deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+
+.rating-reveal
+{
+    animation: reveal 1.5s forwards ease;
+}
+@keyframes reveal
+{
+    from
+    {
+        clip-path: circle(0 at 0 0);
+    }
+    to
+    {
+        clip-path: circle(141.4% at 0 0);
+    }
+}

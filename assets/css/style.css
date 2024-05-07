@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root
+{
+    --primary-color: rgb(0, 128, 128);
+    --secondary-color: rgb(225, 244, 244);
+
+}
+
+body
+{
+    font-family: "Unbounded";
+    width: 100%;
+    height: auto;
+}
+main
+{
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-color: rgb(242, 249, 249);
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+      
+}
+.logo
+{
+    width: auto;
+    padding: 65px 90px 40px 90px;
+}
+.mainTxt
+{
+    width: 90%;
+    margin-top: 25px;
+}
+.mainTxt .tag
+{
+    font-size: 17px;
+    font-family: "Jost";
+    color: rgb(11, 109, 111);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4px;
+      
+}
+.mainTxt h1
+{
+    font-size: 50px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+}
+.sideImg
+{
+    margin-top: 100px;
+    width: 100%;
+}
+.sideImg img
+{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+.productRating
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 79px 0px rgba(0, 0, 0, 0.11);
+    width: 100%;
+    min-height: 300px;  
+    padding: 70px 60px;
+}
+.ratingHead
+{
+    font-size: 22px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+form
+{
+    width: 100%;
+    height: auto;
+
+}
+
+/* rating bar */
+.ratingBar
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+.rangeNumber
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    height: 30px;
+}
+.rangeNumber span
+{
+    font-size: 18px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;  
+    transition: 0.5s;
+}
+.rangeNumber span.active
+{
+    color: var(--primary-color);
+    font-size: 20px;
+    transform: translateY(-3px);
+}
+
+.ratingBar input
+{
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 10px;
+    border-radius: 100px;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 0%, var(--secondary-color) 0%, var(--secondary-color) 100%);
+
+}
+
+/* styling range thumb */
+.ratingBar input::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    border: 5px solid rgb(245, 245, 245);
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+.ratingBar input::-moz-range-thumb
+{
+    border: 5px solid rgb(245, 245, 245);
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+.ratingBar input::-ms-thumb
+{
+    border: 5px solid rgb(245, 245, 245);
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+.likeThumb
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.thumbsingle
+{
+    display: flex;
+    align-items: center;
+}
+.thumbsingle img
+{
+    margin: 0 6px;
+}
+.thumbsingle p
+{
+    font-size: 12px;
+    color: rgb(40, 40, 40);
+    margin-bottom: 0;
+}
+  
+
+
+
+form textarea
+{
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border: solid 2px transparent;
+    padding: 25px 20px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+:focus
+{
+    outline: none;
+    border-color: var(--primary-color);
+}
+::placeholder
+{
+    font-size: 13px;
+    color: rgb(40, 40, 40);
+}
+.formHead
+{
+    font-size: 18px;
+    color: rgb(40, 40, 40);
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.line
+{
+    background-color: rgb(237, 237, 237);
+    height: 1px; 
+    width: 100%;
+    margin: 30px 0;
+}
+
+.inputLabel
+{
+    font-size: 15px;
+    color: rgb(41, 41, 41);
+    font-weight: 500;
+}
+.radio
+{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.radio-single
+{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.radio-single input
+{
+    -webkit-appearance: none;
+    border: solid 2px rgb(189, 203, 230);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 32px;
+    height: 32px;
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.radio-single input::before
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: rgb(60, 112, 255);
+    width: 18px;
+    height: 18px;
+    display: none;
+}
+.radio-single input:checked:before
+{
+    display: block;
+}
+.submit
+{
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    height: 54px;   
+    width: 100%;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;    
+    text-transform: capitalize;
+    margin-top: 40px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+}
+.submit::before, .submit::after
+{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255,0.5);
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0, 100% 0, 50% 100%, 0% 100%);
+    transition: 0.4s;
+    z-index: 0;
+
+
+}
+.submit:hover::before,.submit:hover::after
+{
+    right: -100%;
+}
+.submit::after
+{
+    transition-delay: 0.2s;
+
+
+}
+.thankyouPage .logo
+{
+    padding-bottom: 65px;
+}
+
+
+
+
+.thankyouInner
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.socialIcons img
+{
+    width: auto;
+    margin: 0 5px;
+}
+.thankyouInner h2
+{
+    font-size: 50px;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    margin-top: 20px;
+      
+}
+.thankyouInner p
+{
+    font-size: 20px;
+    color: rgb(40, 40, 40);   
+}
+.thankyouInner .submit
+{
+    margin-top: 30px;
+}
